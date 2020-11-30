@@ -18,4 +18,4 @@ def main(plot_corr=False):
 
         func.scatter_plot(components, dataframe)
 
-main() #run main(plot_corr=True) to plot the heatmap instead of the MDS plot
+main() #run main(True) to plot the heatmap instead of the MDS plot

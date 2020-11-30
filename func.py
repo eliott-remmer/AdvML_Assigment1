@@ -13,7 +13,8 @@ def read_file():
     
     col_names = ['animal name', 'hair', 'feathers', 'eggs', 'milk', 'airborne', 'aquatic', 'predator', 'toothed','backbone', 'breathes', 'venomous', 'fins', 'legs', 'tail', 'domestic', 'catsize', 'type']
 
-    dataframe = pd.read_csv("/Users/georgasplund-sjunnesson/CodeProjects/AdvML/Assignment1/zoo.data", names=col_names)
+    url = "https://raw.githubusercontent.com/eliott-remmer/AdvML_Assigment1/master/zoo.data"
+    dataframe = pd.read_csv(url, names=col_names)
     X = dataframe[col_names[1:-1]]
     return dataframe, X
 
